@@ -1,0 +1,117 @@
+{
+    "function_definition":{
+        "javascript": "function {function_name}({function_args}){function_body}",
+        "c++": "{function_return_type} {function_name}({function_args}){function_body}",
+        "java": "public static {function_return_type} {function_name}({function_args}){function_body}"
+    },
+    
+    "return":{
+        "javascript": "return {variable_name};",
+        "c++": "return {variable_name};",
+        "java": "return {variable_name};"
+    },
+
+
+    "assigment":{
+        "javascript": "var {variable_name} = {variable_value};",
+        "c++": "{variable_type} {variable_name} = {variable_value};",
+        "java": "{variable_type} {variable_name} = {variable_value};"
+    },
+
+    "main":{
+        "javascript": "function main(){\n",
+        "c++": "int main(){\n",
+        "java": "public static void main(String[] args){\n"
+    },
+
+    "for_loop":{
+        "javascript": "for(var {variable_name} = {variable_value}; {variable_name} < {variable_condition}; {variable_name}++){{\n{body}\n}};",
+        "c++": "for({variable_type} {variable_name} = {variable_value}; {variable_name} < {variable_condition}; {variable_name}++){{\n{body}\n}};",
+        "java": "for({variable_type} {variable_name} = {variable_value}; {variable_name} < {variable_condition}; {variable_name}++){{\n{body}\n}};"
+    },
+
+
+
+    "while_loop":{
+        "javascript": "while({condition}){{\n{body}\n}};",
+        "c++": "while({condition}){{\n{body}\n}};",
+        "java": "while({condition}){{\n{body}\n}};"
+    },
+
+
+    "if_statement":{
+        "javascript": "if ({condition}) {{\n{body}\n}}; ",
+        "c++": "if ({condition}) {{\n{body}\n}}; ",
+        "java": "if ({condition}) {{\n{body}\n}}; "
+    },
+
+    "comparison_operator": {
+        "javascript": "{left} {operator} {right}",
+        "c++": "{left} {operator} {right}",
+        "java": "{left} {operator} {right}"
+      },
+
+    "else_statement":{
+        "javascript": "else{",
+        "c++": "else{",
+        "java": "else{"
+    },
+
+
+
+    "print":{
+        "javascript": "console.log({print_content});",
+        "c++": "cout << {print_content} << endl;",
+        "java": "System.out.println({print_content});"
+    },
+
+
+
+    "try_exception":{
+        "javascript": "try{{\n{body}\n}} catch{{\n{except_body}\n}}",
+        "c++": "try{{\n{body}\n}} catch({exception_name}){{\n{except_body}\n}}",
+        "java": "try{{\n{body}\n}} catch({exception_name}){{\n{except_body}\n}}"
+    },
+
+
+    "list":{
+        "javascript": "var {list_name} = [];",
+        "c++": "vector<{list_type}> {list_name};",
+        "java": "ArrayList<{list_type}> {list_name} = new ArrayList<{list_type}>();"
+    },
+
+
+
+    "maps":{
+        "javascript": "var {map_name} = {};",
+        "c++": "map<{map_key_type}, {map_value_type}> {map_name};",
+        "java": "HashMap<{map_key_type}, {map_value_type}> {map_name} = new HashMap<{map_key_type}, {map_value_type}>();"
+    },
+
+
+
+    "class":{
+        "javascript": "class {class_name} {{\n{body}\n}}",
+        "c++": "class {class_name} {{\n{body}\n}}",
+        "java": "public class {class_name} {{\n{body}\n}}"
+    },
+
+    "len":{
+        "javascript": "{list_name}.length",
+        "c++": "{list_name}.size()",
+        "java": "{list_name}.size()"
+    },
+
+    "arrays":{
+        "javascript": "var {variable_name} = [];",
+        "c++": "{variable_type} {variable_name}[{array_size}];",
+        "java": "{variable_type} {variable_name}[] = {{{value}}};"
+    },
+    
+    "function_call":{
+        "javascript": "{function_name}({arguments});",
+        "c++": "{function_name}({arguments});",
+        "java": "{function_name}({arguments});"
+    }
+    
+}
